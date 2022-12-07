@@ -1,7 +1,9 @@
 const Home = () => {
     return (
-        <div style={{border: '1px solid red'}}>Home</div>
+        <div style={{ marginTop: 200 }}>
+            <h1>Hello, I'm Brevan</h1>
+        </div>
     )
 }
 
-export default Home;
+export default Home

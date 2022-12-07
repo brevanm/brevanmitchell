@@ -1,20 +1,14 @@
-import ProfilePic from "../../components/ProfilePic"
+import { Outlet } from 'react-router-dom'
+import { Nav } from '../../components/Nav'
 
 const Root = () => {
     return (
-        <div id="nav">
-            <div id="nav-content">
-            <div style={{display: 'flex', alignItems: 'center'}}>
-                <ProfilePic size={3}/>
-                <h2 style={{marginLeft: 10}}>Brevan Mitchell</h2>
+        <>
+            <Nav />
+            <div id="content">
+                <Outlet />
             </div>
-            <ul>
-                <li>home</li>
-                <li>protfolio</li>
-                <li>resume</li>
-            </ul>
-            </div>
-        </div>
+        </>
     )
 }
 
